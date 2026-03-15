@@ -340,7 +340,7 @@
     <div class="cta-section reveal">
         <h2>Connect <span>with me here</span></h2>
         <div class="cta-buttons">
-            <a href="/cdn-cgi/l/email-protection#f69797848f97949e9f8593c4c6c6cfb6919b979f9ad895999b" class="btn-primary">Email Me</a>
+            <a href="mailto:aaryabhise2009@gmail.com" class="btn-primary">Email Me</a>
             <a href="work.html" class="btn-secondary">See My Work</a>
         </div>
     </div>
@@ -351,7 +351,7 @@
         
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
@@ -385,4 +385,8 @@
                     revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
