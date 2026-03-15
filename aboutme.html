@@ -114,8 +114,8 @@
         .about-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(5,5,8,0.3) 0%, rgba(5,5,8,0) 40%, rgba(5,5,8,1) 100%); }
         .about-hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .page-tag { display: inline-block; font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--purple); margin-bottom: 16px; }
-        .about-hero h1 { font-family: 'Proxima Nova', sans-serif; font-weight: 900; font-size: clamp(52px, 7vw, 100px); line-height: 0.95; letter-spacing: 0; padding-bottom: 0.15em; background: linear-gradient(135deg, #ffffff 20%, #8c52ff 55%, #5c9be6 85%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 24px; }
-        .about-hero p.lead { font-size: 1.05rem; line-height: 1.85; color: rgba(255,255,255,0.55); font-weight: 300; max-width: 500px; margin-bottom: 36px; }
+        .about-hero h1 { font-family: 'Proxima Nova', sans-serif; font-weight: 900; font-size: clamp(52px, 7vw, 100px); line-height: 0.95; letter-spacing: 0; padding-bottom: 0.15em; background: linear-gradient(135deg, #ffffff 10%, #8c52ff 40%, #5c9be6 65%, #3a8fd4 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; margin-bottom: 24px; }
+        .about-hero p.lead { font-size: 1.05rem; line-height: 1.85; color: rgba(255,255,255,0.72); font-weight: 300; max-width: 500px; margin-bottom: 36px; }
         .hero-right { position: relative; }
         .hero-right img { width: 100%; border-radius: 20px; display: block; border: 1px solid rgba(255,255,255,0.07); }
         .hero-right::before { content: ''; position: absolute; inset: -2px; border-radius: 22px; background: linear-gradient(135deg, rgba(140,82,255,0.4), rgba(92,155,230,0.2)); z-index: -1; filter: blur(24px); }
@@ -124,7 +124,7 @@
         .value-banner { background: rgba(140,82,255,0.06); border-top: 1px solid rgba(140,82,255,0.5); border-bottom: 1px solid rgba(140,82,255,0.2); padding: 48px 8%; text-align: center; }
         .value-banner h2 { font-family: 'Proxima Nova', sans-serif; font-weight: 900; font-size: clamp(1.4rem, 3vw, 2.2rem); color: var(--white); margin-bottom: 12px; line-height: 1.3; }
         .value-banner h2 span { background: linear-gradient(90deg, var(--purple), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .value-banner p { font-size: 1rem; color: rgba(255,255,255,0.45); font-weight: 300; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+        .value-banner p { font-size: 1rem; color: rgba(255,255,255,0.65); font-weight: 300; max-width: 600px; margin: 0 auto; line-height: 1.8; }
 
         /* SECTIONS */
         .content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 8%; }
@@ -133,7 +133,7 @@
         .section-tag { display: inline-block; font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--purple); margin-bottom: 14px; }
         .section-heading { font-family: 'Proxima Nova', sans-serif; font-weight: 900; font-size: clamp(36px, 5vw, 60px); line-height: 0.95; letter-spacing: 0; margin-bottom: 20px; }
         .section-heading span { background: linear-gradient(90deg, var(--purple), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .section-body { font-size: 1rem; line-height: 1.85; color: rgba(255,255,255,0.5); font-weight: 300; max-width: 620px; margin-bottom: 40px; }
+        .section-body { font-size: 1rem; line-height: 1.85; color: rgba(255,255,255,0.68); font-weight: 300; max-width: 620px; margin-bottom: 40px; }
 
         /* BIZ CARDS */
         .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
@@ -141,7 +141,7 @@
         .biz-card:hover { background: rgba(140,82,255,0.06); transform: translateY(-4px); box-shadow: 0 20px 50px rgba(140,82,255,0.15); }
         .biz-card-icon { font-size: 1.6rem; margin-bottom: 14px; }
         .biz-card h3 { font-family: 'Proxima Nova', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--white); margin-bottom: 10px; }
-        .biz-card p { font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.45); font-weight: 300; }
+        .biz-card p { font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.65); font-weight: 300; }
 
         /* SKILLS */
         .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
@@ -162,14 +162,14 @@
         .offer-card:hover::before { opacity: 1; }
         .offer-number { font-family: 'Proxima Nova', sans-serif; font-weight: 900; font-size: 2.5rem; background: linear-gradient(90deg, var(--purple), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; margin-bottom: 12px; }
         .offer-card h3 { font-family: 'Proxima Nova', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--white); margin-bottom: 10px; }
-        .offer-card p { font-size: 0.88rem; line-height: 1.8; color: rgba(255,255,255,0.4); font-weight: 300; }
+        .offer-card p { font-size: 0.88rem; line-height: 1.8; color: rgba(255,255,255,0.62); font-weight: 300; }
 
         /* CTA */
         .cta-section { text-align: center; padding: 100px 8%; position: relative; }
         .cta-section::before { content: ''; position: absolute; top: 0; left: 8%; right: 8%; height: 1px; background: linear-gradient(90deg, transparent, rgba(140,82,255,0.4), rgba(92,155,230,0.4), transparent); }
         .cta-section h2 { font-family: 'Proxima Nova', sans-serif; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1; margin-bottom: 20px; }
         .cta-section h2 span { background: linear-gradient(90deg, var(--purple), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .cta-section p { font-size: 1rem; color: rgba(255,255,255,0.45); font-weight: 300; max-width: 460px; margin: 0 auto 40px; line-height: 1.8; }
+        .cta-section p { font-size: 1rem; color: rgba(255,255,255,0.65); font-weight: 300; max-width: 460px; margin: 0 auto 40px; line-height: 1.8; }
         .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
         /* BUTTONS */
@@ -241,54 +241,43 @@
                 <span class="page-tag" style="animation:fadeUp 0.7s ease both;">Who I Am</span>
                 <h1 style="animation:fadeUp 0.8s 0.1s ease both;">Aarya<br>Bhise</h1>
                 <p class="lead" style="animation:fadeUp 0.8s 0.2s ease both;">
-                    Junior at Vandegrift High School. I build brands, lead teams, and ship products — from robotics competitions to real startup ventures and client websites.
+                    I'm a junior at Vandegrift High School with a passion for business. I lead the Robotics Team QuadX 6299 in robotics and marketing. I have co-founded a startup called PantryPal in Vandegrift's InCubator program. I also create websites for organizations to help with their outreach. My goal is to help organizations and make an impact on the community.
                 </p>
                 <div style="animation:fadeUp 0.8s 0.3s ease both;display:flex;gap:12px;flex-wrap:wrap;">
-                    <a href="resume.pdf" download class="btn-secondary">Download Resume ↓</a>
+                    <a href="Resume.pdf" download class="btn-secondary">Download Resume ↓</a>
                     <a href="index.html#contact" class="btn-primary">Get In Touch</a>
                 </div>
             </div>
             <div class="hero-right" style="animation:fadeUp 0.9s 0.15s ease both;">
-                <img src="AARYA2.png" alt="Aarya Bhise">
+                <img src="AARYA.jpg" alt="Aarya Bhise">
             </div>
         </div>
     </div>
 
-    <!-- VALUE BANNER -->
-    <div class="value-banner reveal">
-        <h2>I help people <span>build, grow, and get noticed.</span></h2>
-        <p>Whether that means designing a website, marketing a product, or leading a team — I bring strategy, execution, and real results. Not theory.</p>
-    </div>
+
 
     <div class="content-wrap">
 
         <!-- BUSINESS & MARKETING -->
         <div class="about-section">
             <span class="section-tag reveal">Business & Marketing</span>
-            <h2 class="section-heading reveal reveal-delay-1">What I <span>Actually Do</span></h2>
-            <p class="section-body reveal reveal-delay-2">
-                My business work isn't just coursework — it's real. Through PantryPal and QuadX I've run marketing campaigns, managed teams, raised funding, and built products from scratch.
-            </p>
+            <h2 class="section-heading reveal reveal-delay-1">What I <span>Do</span></h2>
             <div class="two-col reveal">
                 <div class="biz-card">
-                    <div class="biz-card-icon">📣</div>
                     <h3>Marketing & Promotion</h3>
                     <p>Ran social media and outreach campaigns for PantryPal and QuadX. Built brand presence from zero, managed content, and drove awareness for both a startup and a competitive robotics team.</p>
                 </div>
                 <div class="biz-card">
-                    <div class="biz-card-icon">👥</div>
                     <h3>Team Management</h3>
                     <p>Led a 20+ person robotics team across engineering, programming, and outreach subteams. Coordinated scheduling, delegation, and execution across an entire competition season.</p>
                 </div>
                 <div class="biz-card">
-                    <div class="biz-card-icon">💡</div>
                     <h3>Product Development</h3>
                     <p>Co-founded PantryPal through Vandegrift's Incubator Program — ideated the concept, validated with users, built the MVP, and pitched to judges. Real startup process, not a class project.</p>
                 </div>
                 <div class="biz-card">
-                    <div class="biz-card-icon">💰</div>
-                    <h3>Fundraising & Sponsorship</h3>
-                    <p>Raised $1,500 for robotics teams in Rwanda and secured sponsorships for QuadX. Wrote outreach emails, managed donor relationships, and closed deals.</p>
+                    <h3>Website Development</h3>
+                    <p>I have created my own personal portfolio, a website for QuadX, and a website for Pop Up Clay. I focus on creating clean designs while still maintaining the brand's message.</p>
                 </div>
             </div>
         </div>
@@ -297,11 +286,10 @@
         <div class="about-section">
             <span class="section-tag reveal">Skills & Coursework</span>
             <h2 class="section-heading reveal reveal-delay-1">What I <span>Know</span></h2>
-            <p class="section-body reveal reveal-delay-2">Tools I use and courses that back it up.</p>
+
 
             <div class="two-col reveal" style="margin-top:40px;">
                 <div class="biz-card">
-                    <div class="biz-card-icon">🛠️</div>
                     <h3>Skills</h3>
                     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
                         <span style="padding:6px 16px;border:1px solid rgba(140,82,255,0.35);border-radius:50px;font-size:0.78rem;color:rgba(255,255,255,0.65);">Social Media Marketing</span>
@@ -317,7 +305,6 @@
                     </div>
                 </div>
                 <div class="biz-card">
-                    <div class="biz-card-icon">📚</div>
                     <h3>Relevant Coursework</h3>
                     <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px;">
                         <div style="display:flex;align-items:center;gap:12px;">
@@ -351,11 +338,9 @@
 
     <!-- CTA -->
     <div class="cta-section reveal">
-        <span class="section-tag">Let's Work Together</span>
-        <h2>Ready to <span>build something?</span></h2>
-        <p>Whether you need a website, a marketing push, or just want to connect — reach out. I respond fast.</p>
+        <h2>Connect <span>with me here</span></h2>
         <div class="cta-buttons">
-            <a href="mailto:aaryabhise2009@gmail.com" class="btn-primary">Email Me</a>
+            <a href="/cdn-cgi/l/email-protection#f69797848f97949e9f8593c4c6c6cfb6919b979f9ad895999b" class="btn-primary">Email Me</a>
             <a href="work.html" class="btn-secondary">See My Work</a>
         </div>
     </div>
@@ -363,10 +348,10 @@
     <!-- FOOTER -->
     <footer class="reveal">
         <span class="footer-brand">Aarya Bhise</span>
-        <span class="footer-copy">© 2025 · Built with purpose</span>
+        
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
@@ -400,8 +385,4 @@
                     revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-    </script>
-</body>
-</html>
+        }, { threshold: 0.1

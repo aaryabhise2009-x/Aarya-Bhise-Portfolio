@@ -186,8 +186,8 @@
             font-size: 0.8rem;
             letter-spacing: 0.3em;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.45);
-            margin-bottom: 6px;
+            color: rgba(255,255,255,0.65);
+            margin-bottom: 0;
             animation: fadeUp 0.8s ease both;
         }
 
@@ -208,7 +208,7 @@
         .hero-subtitle {
             margin-top: 24px;
             font-size: clamp(0.85rem, 1.5vw, 1rem);
-            color: rgba(255,255,255,0.5);
+            color: rgba(255,255,255,0.68);
             max-width: 420px;
             line-height: 1.7;
             font-weight: 300;
@@ -265,6 +265,9 @@
         .hero-circles {
             display: flex;
             justify-content: center;
+            align-self: center;
+            width: 100%;
+            margin-top: 28px;
             margin-bottom: 28px;
             animation: fadeUp 0.9s 0.05s ease both;
         }
@@ -290,15 +293,15 @@
             box-shadow: 0 0 30px rgba(92, 155, 230, 0.5);
         }
 
-        .c1 { background-image: url('AARYA2.png'); z-index: 3; }
-        .c2 { background-image: url('AARYA2.png'); z-index: 2; }
+        .c1 { background-image: url('2.jpeg'); z-index: 2; }
+        .c2 { background-image: url('AARYA2.png'); z-index: 10; }
         .c3 { background-image: url('1.jpg'); z-index: 1; }
 
         /* ─── TICKER ─── */
         .ticker-section {
             width: 100%;
             overflow: hidden;
-            padding: 50px 0;
+            padding: 16px 0;
             background: var(--dark);
             border-top: 1px solid rgba(255,255,255,0.05);
             border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -317,6 +320,11 @@
             display: flex;
             width: fit-content;
             animation: tickerScroll 30s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .ticker-track.loaded {
+            animation-play-state: running;
         }
 
         .ticker-track img {
@@ -354,7 +362,7 @@
         }
 
         .about-section {
-            padding: 120px 8%;
+            padding: 60px 8%;
             display: flex;
             align-items: center;
             gap: 80px;
@@ -395,7 +403,7 @@
         .about-text p {
             font-size: 1rem;
             line-height: 1.8;
-            color: rgba(255,255,255,0.55);
+            color: rgba(255,255,255,0.72);
             font-weight: 300;
             max-width: 480px;
         }
@@ -608,7 +616,7 @@
 
         .contact-section p {
             font-size: 1rem;
-            color: rgba(255,255,255,0.45);
+            color: rgba(255,255,255,0.65);
             font-weight: 300;
             max-width: 480px;
             margin: 0 auto 48px;
@@ -663,7 +671,7 @@
             font-size: 0.68rem;
             letter-spacing: 0.18em;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.35);
+            color: rgba(255,255,255,0.55);
             display: block;
             margin-bottom: 2px;
         }
@@ -941,7 +949,7 @@
         <div class="hero-bg"></div>
 
         <div class="hero-content">
-            <p class="hero-label">Portfolio · 2025</p>
+            <p class="hero-label">Portfolio · 2026</p>
 
             <div class="hero-circles">
                 <div class="hero-circle c1"></div>
@@ -957,7 +965,7 @@
 
             <div class="hero-cta" style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
                 <a href="#work" class="btn-primary">View My Work</a>
-                <a href="resume.pdf" download class="btn-secondary">Download Resume ↓</a>
+                <a href="Resume.pdf" download class="btn-secondary">Download Resume ↓</a>
             </div>
         </div>
 </div>
@@ -965,7 +973,6 @@
 
     <!-- ─── PHOTO TICKER ─── -->
     <section class="ticker-section">
-        <p class="ticker-label reveal">Moments &amp; Highlights</p>
         <div style="overflow:hidden;">
             <div class="ticker-track">
                 <img src="1.jpg" alt="Aarya presenting">
@@ -987,21 +994,14 @@
     <section id="about" class="reveal">
         <div class="about-section">
             <div class="about-text">
-                <span class="section-tag reveal">Who I Am</span>
-                <h2>Building<br><span>Tomorrow</span><br>Today</h2>
+                <h2>Who I <span>Am</span></h2>
                 <p>
-                    I'm a junior at Vandegrift High School with a passion for business, technology, and community. I lead Team QuadX 6299 in robotics competitions and co-founded PantryPal through the school's Incubator Program. My goal is simple — make a meaningful impact on the people around me.
+                    I'm a junior at Vandegrift High School with a passion for business. I lead Robotics Team QuadX 6299 in robotics and marketing. I have co-founded a startup called PantryPal in Vandegrift's InCubator program. I also create websites for organizations to help with their outreach. My goal is to help organizations and make an impact on the community.
                 </p>
-                <div class="about-tags">
-                    <span class="tag">Robotics · QuadX 6299</span>
-                    <span class="tag">Startup Founder</span>
-                    <span class="tag">PantryPal</span>
-                    <span class="tag">Business</span>
-                    <span class="tag">Community Impact</span>
-                </div>
+
             </div>
             <div class="about-photo reveal reveal-delay-2">
-                <img src="AARYA2.png" alt="Aarya Bhise">
+                <img src="AARYA.jpg" alt="Aarya Bhise">
             </div>
         </div>
     </section>
@@ -1013,8 +1013,8 @@
             <h2>My Work</h2>
 
             <div class="work-grid">
-                <a href="#" class="work-card reveal">
-                    <div class="work-card-bg" style="background-image: url('2.jpeg');"></div>
+                <a href="work.html#quadx" class="work-card reveal">
+                    <div class="work-card-bg" style="background-image: url('QuadX.jpg');"></div>
                     <div class="work-card-overlay">
                         <span class="work-card-tag">Robotics</span>
                         <span class="work-card-title">Team QuadX 6299</span>
@@ -1022,8 +1022,8 @@
                     <div class="work-card-arrow">↗</div>
                 </a>
 
-                <a href="#" class="work-card reveal reveal-delay-2">
-                    <div class="work-card-bg" style="background-image: url('4.JPG');"></div>
+                <a href="work.html#pantrypal" class="work-card reveal reveal-delay-2">
+                    <div class="work-card-bg" style="background-image: url('PantryPal.jpg');"></div>
                     <div class="work-card-overlay">
                         <span class="work-card-tag">Startup</span>
                         <span class="work-card-title">PantryPal</span>
@@ -1032,7 +1032,7 @@
                 </a>
 
                 <a href="work.html#websites" class="work-card reveal reveal-delay-4">
-                    <div class="work-card-bg" style="background-image: url('3.jpg');"></div>
+                    <div class="work-card-bg" style="background-image: url('WEBSITE.png');"></div>
                     <div class="work-card-overlay">
                         <span class="work-card-tag">Web Development</span>
                         <span class="work-card-title">Website Creation</span>
@@ -1047,8 +1047,7 @@
     <section id="contact">
         <div class="contact-section reveal">
             <span class="section-tag">Get In Touch</span>
-            <h2>Let's <span>Connect</span></h2>
-            <p>Whether you want to talk robotics, startups, or just say hi — I'd love to hear from you.</p>
+            <h2>Reach <span>Out To Me</span></h2>
 
             <div class="contact-cards">
                 <a href="mailto:aaryabhise2009@gmail.com" class="contact-card">
@@ -1059,7 +1058,7 @@
                     </div>
                 </a>
 
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="contact-card">
+                <a href="https://www.linkedin.com/in/aarya-bhise-724a39340/" target="_blank" rel="noopener" class="contact-card">
                     <div class="contact-card-icon">in</div>
                     <div class="contact-card-text">
                         <span class="contact-card-label">LinkedIn</span>
@@ -1074,10 +1073,10 @@
     <!-- ─── FOOTER ─── -->
     <footer class="reveal">
         <span class="footer-brand">Aarya Bhise</span>
-        <span class="footer-copy">© 2025 · Built with purpose</span>
+        
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // ─── LOADER ───
         const loader = document.getElementById('loader');
         if (sessionStorage.getItem('visited')) {
@@ -1118,6 +1117,28 @@
             mobileMenu.classList.remove('open');
             document.body.style.overflow = '';
         }
+    </script>
+
+    <script>
+        // ─── TICKER: start after images load ───
+        const tickerTrack = document.querySelector('.ticker-track');
+        const tickerImgs = tickerTrack.querySelectorAll('img');
+        let loadedCount = 0;
+        tickerImgs.forEach(img => {
+            if (img.complete) {
+                loadedCount++;
+                if (loadedCount === tickerImgs.length) tickerTrack.classList.add('loaded');
+            } else {
+                img.addEventListener('load', () => {
+                    loadedCount++;
+                    if (loadedCount === tickerImgs.length) tickerTrack.classList.add('loaded');
+                });
+                img.addEventListener('error', () => {
+                    loadedCount++;
+                    if (loadedCount === tickerImgs.length) tickerTrack.classList.add('loaded');
+                });
+            }
+        });
     </script>
 
     <script>
